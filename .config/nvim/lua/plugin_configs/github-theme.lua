@@ -5,6 +5,7 @@ require("github-theme").setup({
   comment_style = "NONE",
   keyword_style = "NONE",
   function_style = "NONE",
+  transparent = true,
   variable_style = "NONE",
   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
   colors = {hint = "orange", error = "#ff4144"},
