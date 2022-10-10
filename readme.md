@@ -15,9 +15,40 @@ Hello, welcome to my personal development setup.
 
 ## Step by step
 
-Tmux install
+# Install Neoviem
+Desc: Method: appImage
 
-Fish Install
-    Oh-my-fish install
+```
 
-nvim >0.7 install
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+
+./nvim.appimage --appimage-extract
+
+./squashfs-root/AppRun --version
+
+sudo mv squashfs-root /
+
+sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+
+nvim
+
+```
+
+
+# Install tmux 
+Desc: Unix, Linux Installation
+
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+# Install fish
+Desc: Install fish and tide
+
+```
+apt-get install software-properties-common
+apt-get update 
+apt install fish
+```
