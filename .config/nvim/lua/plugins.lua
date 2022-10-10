@@ -14,7 +14,6 @@ vim.cmd([[
 
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  
 	use 'nvim-lualine/lualine.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use {
@@ -31,6 +30,11 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
   use 'onsails/lspkind-nvim'
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'MunifTanjim/prettier.nvim'
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
+  use 'BurntSushi/ripgrep'
   use{
   'nvim-telescope/telescope.nvim', tag = '0.1.0',
   requires={{'nvim-lua/plenary.nvim'}}
