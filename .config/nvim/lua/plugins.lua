@@ -35,7 +35,7 @@ return packer.startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'BurntSushi/ripgrep'
-  use ({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+  use 'L3MON4D3/LuaSnip'
   use{
   'nvim-telescope/telescope.nvim', tag = '0.1.0',
   requires={{'nvim-lua/plenary.nvim'}}
