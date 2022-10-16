@@ -36,6 +36,8 @@ return packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'BurntSushi/ripgrep'
   use 'L3MON4D3/LuaSnip'
+  use 'dinhhuy258/git.nvim'
+  use 'lewis6991/gitsigns.nvim'
   use{
   'nvim-telescope/telescope.nvim', tag = '0.1.0',
   requires={{'nvim-lua/plenary.nvim'}}
