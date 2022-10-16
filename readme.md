@@ -30,6 +30,8 @@ $ apt-get install tmux
 
 # Install fish 
 
+This method can cause false virus alarm, if is posible try the recomended download method from fish-shell repository 
+
 ```
 $ sudo apt install build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext
 
