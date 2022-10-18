@@ -30,6 +30,21 @@ $ apt-get install tmux
 
 # Install fish 
 
+First method for debian distro working thanks to @Authmane Terki
+
+```
+$ echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_10/ /' | sudo tee -a /etc/apt/sources.list
+$ wget -q -O - https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key | sudo apt-key add -
+$ sudo apt update
+$ sudo apt install fish
+```
+To setup fish default shell 
+```
+chsh --shell $(which fish)
+sudo chsh --shell $(which fish)
+```
+
+
 This method can cause false virus alarm, if is posible try the recomended download method from fish-shell repository 
 
 ```
