@@ -13,6 +13,15 @@ Hello, welcome to my personal development setup.
 </p>
 ---
 
+
+
+Existing script v1 to install all the steps beneath, make sure to read it before executing !
+
+```
+chmod u+x ./install.sh && ./install.sh
+```
+
+
 # Essential
 
 ```
