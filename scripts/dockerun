@@ -3,7 +3,15 @@ GREEN="\033[0;32m"
 RED="\033[31m"
 NC="\033[0m"
 
-# CHECKING IF DOCKER IS RUNNING 
+###### DOCS
+# This tiny script is for improve docker stop / run on my WSL setup, 
+# If you are using wsl only for docker I recomend to automatically start 
+# dockerd on your favorite shell .bashrc/. zshrc/config.fish
+# In order to use as command
+# Execute:
+#
+# chmod 755 dockerun && mv dockerun /usr/bin/
+#
 
 
 DRUN=`ps aux | grep dockerd | grep -v grep`
@@ -14,6 +22,7 @@ if [ -z "$DRUN" ]; then
     if [ "$answer" != "${answer#[Yy]}" ] ;then
       echo "Proceding to start docker"
       sudo dockerd > /dev/null 2>&1 &
+      disown
     else
       echo "Selected no, closing... "
       exit 1
